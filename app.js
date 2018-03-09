@@ -17,9 +17,8 @@ function sum(a, b) { //eslint-disable-line
   return [sumOfTwoNums, sumString];
 }
 
-
 // Here is the test for sum(); uncomment it to run it
-// testSum(4, 7);
+testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -32,12 +31,17 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // // Write your code here
-// function multiply(a, b) { //eslint-disable-line
-
-// }
+function multiply(a, b) { //eslint-disable-line
+  //multiply the numbers
+  var productOfTwoNums = a * b;
+  // concatenate the string
+  var productString = 'The product of ' + a + ' and ' + b + ' is ' + productOfTwoNums + '.';
+  //return an array
+  return [productOfTwoNums, productString];
+}
 
 // // Here is the test for multiply(); uncomment it to run it
-// // testMultiply(5,9);
+testMultiply(5,9);
 
 // // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
