@@ -58,7 +58,7 @@ testMultiply(5,9);
 
 // // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-  //sum of three numbers, 4 + 7 + 5 = 16
+  //sum of three numbers, 4 + 7 + 5 = 16. gotta remember the sum function has two parts of the array. and we want to reference the first part of the array or [0]
   var sumAndSum = sum(sum(4,7)[0],5)[0];
   //product of three numbers, 4*7*5 = 140
   var multiplyAndMultiply = multiply(multiply(4,7)[0],5)[0];
@@ -85,20 +85,20 @@ testSumAndMultiply(4,7,5);
 // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // // // Write your code here
-// var testArray = [2, 3, 4]; //eslint-disable-line
+var testArray = [2, 3, 4]; //eslint-disable-line
 
-// function sumArray(testArray) { //eslint-disable-line
-
-//   var addingAllUp = sum(sum(testArray[0], testArray[1])[0],testArray[2])[0];
-//   var addingAllUpString = testArray[0] +','+ testArray[1] +','+ testArray[2] +' was passed in as an array of numbers, and ' + addingAllUp + ' is their sum.';
-//   console.log(addingAllUp);
-//   console.log(addingAllUpString);
-//   return [addingAllUp, addingAllUpString];
-// }
+function sumArray(testArray) { //eslint-disable-line
+  //with the array, remember the sum function will do the same as in the third question, referencing the first part or [0]. but this time, an array within an array. 
+  var addingAllUp = sum(sum(testArray[0], testArray[1])[0],testArray[2])[0];
+  //putting the array numbers into the string. this is easier since the array up top is referenced, rather than using letters, a,b,or c. Not to forget to adding in the variable, addingAllUp, in this element
+  var addingAllUpString = testArray[0] +','+ testArray[1] +','+ testArray[2] +' was passed in as an array of numbers, and ' + addingAllUp + ' is their sum.';
+  //2 console.log's were here to see if the above variables were testing correctly. they have since been deleted.
+  return [addingAllUp, addingAllUpString];
+}
 
 // // // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // // // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
