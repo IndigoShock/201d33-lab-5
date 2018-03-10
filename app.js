@@ -92,11 +92,13 @@ function sumArray(testArray) { //eslint-disable-line
   var addingAllUp = sum(sum(testArray[0], testArray[1])[0],testArray[2])[0];
   //putting the array numbers into the string. this is easier since the array up top is referenced, rather than using letters, a,b,or c. Not to forget to adding in the variable, addingAllUp, in this element
   var addingAllUpString = testArray[0] +','+ testArray[1] +','+ testArray[2] +' was passed in as an array of numbers, and ' + addingAllUp + ' is their sum.';
-  //2 console.log's were here to see if the above variables were testing correctly. they have since been deleted.
+  //2 console.log's were here to see if the above variables were testing correctly.
+  // console.log(addingAllUp);
+  // console.log(addingAllUpString);
   return [addingAllUp, addingAllUpString];
 }
 
-// // // Here is the test for sumArray(); uncomment it to run it
+// // Here is the test for sumArray(); uncomment it to run it
 
 testSumArray(testArray);
 
@@ -113,15 +115,15 @@ testSumArray(testArray);
 // // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // // // Write your code here
-// function multiplyArray(testArray) { //eslint-disable-line
-//   var multiplyAllUp = multiply(multiply(testArray[0], testArray[1])[0],testArray[2])[0];
-//   var multiplyAllUpString = 'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] +' have a product of ' + multiplyAllUp + '.';
-//   console.log(multiplyAllUp);
-//   console.log(multiplyAllUpString);
-//   return [multiplyAllUp, multiplyAllUpString];
-// }
-
+function multiplyArray(testArray) { //eslint-disable-line
+  //similar to question 4 but plugging in multiplication
+  var multiplyAllUp = multiply(multiply(testArray[0], testArray[1])[0],testArray[2])[0];
+  var multiplyAllUpString = 'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] +' have a product of ' + multiplyAllUp + '.';
+  // console.log(multiplyAllUp);
+  // console.log(multiplyAllUpString);
+  return [multiplyAllUp, multiplyAllUpString];
+}
 // // // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // // // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
