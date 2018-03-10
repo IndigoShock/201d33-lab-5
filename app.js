@@ -58,9 +58,13 @@ testMultiply(5,9);
 
 // // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-  var sumAndSum = sum(sum(4,7),5);
-  var multiplyAndMultiply = multiply(multiply(4,7),5);
+  //sum of three numbers, 4 + 7 + 5 = 16
+  var sumAndSum = sum(sum(4,7)[0],5)[0];
+  //product of three numbers, 4*7*5 = 140
+  var multiplyAndMultiply = multiply(multiply(4,7)[0],5)[0];
+  //third element (sum of all three numbers)
   var sumAndSumString = a + ' and ' + b + ' and ' + c + ' sum to ' + sumAndSum + '.';
+  //fourth element (product)
   var multiplyAndMultiplyString = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multiplyAndMultiply + '.';
   return [sumAndSum, multiplyAndMultiply, sumAndSumString, multiplyAndMultiplyString];
 }
@@ -80,35 +84,44 @@ testSumAndMultiply(4,7,5);
 
 // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
-// // Write your code here
-var testArray = [2, 3, 4]; //eslint-disable-line
+// // // Write your code here
+// var testArray = [2, 3, 4]; //eslint-disable-line
 
-function sumArray(testArray) { //eslint-disable-line
+// function sumArray(testArray) { //eslint-disable-line
 
-}
+//   var addingAllUp = sum(sum(testArray[0], testArray[1])[0],testArray[2])[0];
+//   var addingAllUpString = testArray[0] +','+ testArray[1] +','+ testArray[2] +' was passed in as an array of numbers, and ' + addingAllUp + ' is their sum.';
+//   console.log(addingAllUp);
+//   console.log(addingAllUpString);
+//   return [addingAllUp, addingAllUpString];
+// }
 
-// // Here is the test for sumArray(); uncomment it to run it
+// // // Here is the test for sumArray(); uncomment it to run it
 
 // testSumArray(testArray);
 
-// // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
+// // // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
-// /////////////////////////////////////
-// /* Problem 5
-// Write a function called multiplyArray() that takes an array of numbers as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
+// // /////////////////////////////////////
+// // /* Problem 5
+// // Write a function called multiplyArray() that takes an array of numbers as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
 
-// "The numbers 2,3,4 have a product of 24."
+// // "The numbers 2,3,4 have a product of 24."
 
-// IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To do multiplication, use your multiply() function that you've already created. You're going to have to be resourceful to figure out how to do this.
+// // IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To do multiplication, use your multiply() function that you've already created. You're going to have to be resourceful to figure out how to do this.
 
-// Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
+// // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
-// // Write your code here
+// // // Write your code here
 // function multiplyArray(testArray) { //eslint-disable-line
-
+//   var multiplyAllUp = multiply(multiply(testArray[0], testArray[1])[0],testArray[2])[0];
+//   var multiplyAllUpString = 'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] +' have a product of ' + multiplyAllUp + '.';
+//   console.log(multiplyAllUp);
+//   console.log(multiplyAllUpString);
+//   return [multiplyAllUp, multiplyAllUpString];
 // }
 
-// // Here is the test for multiplyArray(); uncomment it to run it
-// // testMultiplyArray(testArray);
+// // // Here is the test for multiplyArray(); uncomment it to run it
+// testMultiplyArray(testArray);
 
-// // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
+// // // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
